@@ -27,7 +27,7 @@ observer.schedule(event_handler, '.')
 observer.start()
 try:
   while observer.is_alive():
-    observer.join(60) # Sit and wait for events
+    observer.join() # Sit and wait forvever for events
 finally:
   observer.stop()
   observer.join()
